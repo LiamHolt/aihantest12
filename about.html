@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Improved Test Page</title>
+    <title>About Us - MyProject</title>
     <style>
+        /* Same styles as index.html */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -76,6 +77,28 @@
             padding-left: 20px;
         }
 
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .team-member {
+            text-align: center;
+            padding: 1rem;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+        }
+
+        .team-member img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+            background-color: #ddd;
+        }
+
         @media (max-width: 768px) {
             .navbar {
                 flex-direction: column;
@@ -94,21 +117,45 @@
     <nav class="navbar">
         <div class="nav-brand">MyProject</div>
         <ul class="nav-links">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
     </nav>
     <div class="container">
-        <h1>Welcome to Our Project</h1>
-        <p>This is a beautifully styled page showcasing our repository content.</p>
-        <p>We've improved the content and made it more professional!</p>
+        <h1>About Our Team</h1>
+        <p>Welcome to MyProject! We're a passionate team dedicated to creating innovative solutions that make a difference.</p>
+        
+        <h2>Our Mission</h2>
+        <p>Our mission is to deliver high-quality, user-friendly solutions that help businesses and individuals achieve their goals. We believe in continuous improvement and staying at the forefront of technology.</p>
+        
+        <h2>Our Values</h2>
         <ul>
-            <li>Clean and modern design</li>
-            <li>Responsive layout</li>
-            <li>Optimized content</li>
+            <li><strong>Innovation:</strong> We constantly explore new ideas and technologies</li>
+            <li><strong>Quality:</strong> We maintain high standards in everything we do</li>
+            <li><strong>Collaboration:</strong> We believe in the power of teamwork</li>
+            <li><strong>Integrity:</strong> We operate with honesty and transparency</li>
         </ul>
+
+        <h2>Meet The Team</h2>
+        <div class="team-grid">
+            <div class="team-member">
+                <img src="#" alt="Team Member 1">
+                <h3>John Doe</h3>
+                <p>Lead Developer</p>
+            </div>
+            <div class="team-member">
+                <img src="#" alt="Team Member 2">
+                <h3>Jane Smith</h3>
+                <p>UX Designer</p>
+            </div>
+            <div class="team-member">
+                <img src="#" alt="Team Member 3">
+                <h3>Mike Johnson</h3>
+                <p>Project Manager</p>
+            </div>
+        </div>
     </div>
 </body>
 </html>
