@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Improved Test Page</title>
+    <title>Study in Germany - Your Path to Success</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -13,7 +13,7 @@
         }
 
         .navbar {
-            background-color: #333;
+            background-color: #1a4b8c;  /* German flag colors theme */
             padding: 1rem;
             color: white;
             display: flex;
@@ -44,11 +44,20 @@
         }
 
         .nav-links a:hover {
-            background-color: #555;
+            background-color: #2c5aa0;
         }
 
         .nav-links a.active {
-            background-color: #4CAF50;
+            background-color: #dd1c1a;
+        }
+
+        .hero {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1592притворяюсь-это-url');
+            background-size: cover;
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+            margin-bottom: 2rem;
         }
 
         .container {
@@ -58,6 +67,25 @@
             background-color: white;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .pathways {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .pathway-card {
+            padding: 2rem;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .pathway-card:hover {
+            transform: translateY(-5px);
         }
 
         h1 {
@@ -70,10 +98,19 @@
             line-height: 1.6;
         }
 
-        ul {
-            color: #666;
-            line-height: 1.6;
-            padding-left: 20px;
+        .cta-button {
+            display: inline-block;
+            background-color: #dd1c1a;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 4px;
+            text-decoration: none;
+            margin-top: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #b81816;
         }
 
         @media (max-width: 768px) {
@@ -92,23 +129,48 @@
 </head>
 <body>
     <nav class="navbar">
-        <div class="nav-brand">MyProject</div>
+        <div class="nav-brand">Study in Germany</div>
         <ul class="nav-links">
             <li><a href="/aihantest12/index.html" class="active">Home</a></li>
-            <li><a href="/aihantest12/about.html">About</a></li>
-            <li><a href="/aihantest12/services.html">Services</a></li>
+            <li><a href="/aihantest12/about.html">About Us</a></li>
+            <li><a href="/aihantest12/services.html">Programs</a></li>
             <li><a href="/aihantest12/contact.html">Contact</a></li>
         </ul>
     </nav>
+
+    <div class="hero">
+        <h1>Your Future in Germany Starts Here</h1>
+        <p>Unlock world-class education and career opportunities in Germany</p>
+        <a href="/aihantest12/contact.html" class="cta-button">Start Your Journey</a>
+    </div>
+
     <div class="container">
-        <h1>Welcome to Our Project</h1>
-        <p>This is a beautifully styled page showcasing our repository content.</p>
-        <p>We've improved the content and made it more professional!</p>
-        <ul>
-            <li>Clean and modern design</li>
-            <li>Responsive layout</li>
-            <li>Optimized content</li>
-        </ul>
+        <h2>Your Path to Success in Germany</h2>
+        <p>We specialize in helping Vietnamese students access quality education and career opportunities in Germany. Our personalized guidance ensures a smooth transition to your studies abroad.</p>
+        
+        <div class="pathways">
+            <div class="pathway-card">
+                <h3>University Studies</h3>
+                <p>Pursue your bachelor's degree at top German universities. Perfect for high school graduates aiming for higher education.</p>
+                <a href="/aihantest12/services.html#university" class="cta-button">Learn More</a>
+            </div>
+            <div class="pathway-card">
+                <h3>Vocational Training</h3>
+                <p>Start your career in healthcare or IT through Germany's renowned dual education system. Hands-on experience meets theoretical learning.</p>
+                <a href="/aihantest12/services.html#vocational" class="cta-button">Learn More</a>
+            </div>
+        </div>
+
+        <div style="margin-top: 3rem;">
+            <h2>Why Choose Germany?</h2>
+            <ul style="color: #666; line-height: 1.6;">
+                <li>World-renowned education system</li>
+                <li>Strong job market with skills shortage in IT and healthcare</li>
+                <li>High quality of life and work-life balance</li>
+                <li>Vibrant international community</li>
+                <li>Affordable education compared to other countries</li>
+            </ul>
+        </div>
     </div>
 </body>
 </html>
